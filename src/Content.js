@@ -154,7 +154,7 @@ export const content = {
         ],
     },
     Projects: {
-        title: "Projects",
+        title: "Web development Projects",
         subtitle: "MY CREATION",
         image: person_project,
         project_content: [{
