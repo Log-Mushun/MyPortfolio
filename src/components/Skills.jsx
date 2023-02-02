@@ -3,9 +3,6 @@ import { createElement, useState } from "react";
 import { content } from "../Content";
 // import modal package
 import Modal from "react-modal";
-import { useRef } from "react";
-import { render } from "react-dom";
-import { text } from "@fortawesome/fontawesome-svg-core";
 
 const customStyles = {
   content: {
