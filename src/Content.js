@@ -13,8 +13,9 @@ import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
 import project1 from "./assets/images/Projects/project1.png";
-import img2 from "./assets/images/Projects/img2.png";
-import img3 from "./assets/images/Projects/img3.png";
+import project2 from "./assets/images/Projects/project2.png";
+import project3 from "./assets/images/Projects/project3.png";
+import project4 from "./assets/images/Projects/project4.png";
 import person_project from "./assets/images/Projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
@@ -157,17 +158,25 @@ export const content = {
         subtitle: "MY CREATION",
         image: person_project,
         project_content: [{
-                title: "Gym Website",
+                title: "CodeSense",
                 image: project1,
+                link: "https://codesense.netlify.app"
             },
             {
-                title: "Social Media web",
-                image: img2,
+                title: "Greenhub",
+                image: project2,
+                link: "https://204-michelle.github.io/Greenhub/"
             },
             {
-                title: "Creative Website",
-                image: img3,
+                title: "InnoVate",
+                image: project3,
+                link: "https://innovate-interior.webflow.io"
             },
+            {
+                title: "PlaySafeNow",
+                image: project4,
+                link: "https://paysafenow.webflow.io"
+            }
         ],
     },
     Testimonials: {

@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
+import { Blank } from "grommet-icons";
 
 const Projects = () => {
   const { Projects } = content;
@@ -48,7 +49,7 @@ const Projects = () => {
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{content.title}</h5>
                   <button className="font-bold text-gray self-end">
-                    READ MORE
+                    <a href={content.link} target="_blank">VISIT PREVIEW SITE</a>
                   </button>
                 </div>
               </SwiperSlide>
