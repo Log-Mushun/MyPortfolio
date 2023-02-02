@@ -18,6 +18,10 @@ import project3 from "./assets/images/Projects/project3.png";
 import project4 from "./assets/images/Projects/project4.png";
 import person_project from "./assets/images/Projects/person.png";
 
+import dproject1 from "./assets/images/Projects/dproject1.png";
+import dproject2 from "./assets/images/Projects/dproject2.png";
+import dproject3 from "./assets/images/Projects/dproject3.png";
+
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
 import avatar3 from "./assets/images/Testimonials/avatar3.png";
@@ -177,6 +181,26 @@ export const content = {
                 image: project4,
                 link: "https://paysafenow.webflow.io"
             }
+        ],
+    },
+    DesignerProjects: {
+        title: "Designer Projects",
+        subtitle: "Icons, Logos and more",
+        project_content: [{
+                title: "App Icons",
+                image: dproject1,
+                link: "https://www.behance.net/gallery/116430363/Icons-for-an-app"
+            },
+            {
+                title: "Content for marketing campaigns",
+                image: dproject2,
+                link: "https://www.behance.net/gallery/117426695/Some-adversiting-I-made-for-social-media"
+            },
+            {
+                title: "Logos",
+                image: dproject3,
+                link: "https://www.behance.net/gallery/162788585/Logos-I-made-as-Freelancer"
+            },
         ],
     },
     Testimonials: {

@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Hireme from "./Hireme";
 import Contact from "./Contact";
 import Backtotopbutton from "./Backtotopbutton";
+import DesignerProjects from "./DesignerProjects";
 
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -64,6 +65,7 @@ function goToContact(){
       <Skills />
       <Service />
       <Projects />
+      <DesignerProjects />
       <Testimonials />
       <Hireme />
       <Contact />
