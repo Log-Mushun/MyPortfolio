@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
-import { Blank } from "grommet-icons";
 
 const Projects = () => {
   const { Projects } = content;
