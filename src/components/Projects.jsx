@@ -27,7 +27,7 @@ const Projects = () => {
             src={Projects.image}
             alt="..."
             data-aos="fade-right"
-            className="max-w-[45vw] min-w-[22rem]"
+            className="hidden md:block max-w-[45vw] min-w-[22rem]"
           />
           <Swiper
             pagination={{
@@ -37,12 +37,12 @@ const Projects = () => {
             data-aos-duration="15"
             spaceBetween={20}
             modules={[Pagination]}
-            className="rounded-3xl pb-16 max-w-lg drop-shadow-primary self-start"
+            className="rounded-3xl pb-16 flex max-w-lg min-w-xs drop-shadow-primary self-start"
           >
             {Projects.project_content.map((content, i) => (
               <SwiperSlide
                 key={i}
-                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-lg"
+                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
               >
                 <img src={content.image} alt="..." />
                 <div className="flex flex-col gap-1 mt-2">

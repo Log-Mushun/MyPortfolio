@@ -6,7 +6,7 @@ import ai from "./assets/images/Skills/ai.png";
 import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import dotnet from "./assets/images/Skills/dotnet.png";
-import csharp from "./assets/images/Skills/csharp.png";
+import sql from "./assets/images/Skills/SQLserver.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -105,7 +105,7 @@ export const content = {
                 logo: ps,
             },
             {
-                name: "React js",
+                name: "React Native",
                 para: "Web applications",
                 list: {
                     1: "1. I have experience in building dynamic single-page web applications with visually stunning user interfaces using React.",
@@ -126,13 +126,13 @@ export const content = {
                 logo: ai,
             },
             {
-                name: "C#",
-                para: "the programming language that I know the best",
+                name: "SQL server",
+                para: "Data base management",
                 list: {
-                    1: "1. With C# and .NET Core, I have experience in developing robust and scalable backend systems, including APIs.",
-                    2: "2. My knowledge of C# also extends to the realm of video game development, where I have utilized the language to create engaging gaming experiences.",
+                    1: "1. Storing information in relational databases",
+                    2: "2. Administration of request and response interactions with the servers that host the databases.",
                 },
-                logo: csharp,
+                logo: sql,
             },
         ],
         icon: MdArrowForward,
@@ -224,7 +224,7 @@ export const content = {
             {
                 review: "“Simple communication and excellent results.”",
                 img: avatar4,
-                name: "MANUEL SCHWARZ.",
+                name: "MANUEL S.",
             },
         ],
     },

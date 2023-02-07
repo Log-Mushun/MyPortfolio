@@ -4,22 +4,6 @@
 + npm i
 + npm run dev
 
-# You Learn:
-+ react js hooks
-+ folder structure
-+ tailwind css
-+ swiper js
-+ react icons
-+ react js packages (ex:react-modal)
-+ email js
-+ aos scroll animation
-+ and more....
-
-# live preview link
-https://codeaprogram-portfolio.web.app/
-
-# Startup repository link
-https://github.com/Sridhar-C-25/React_portfolio_2_startup
 
 # packages:
 + tailwind css - https://tailwindcss.com/docs/installation

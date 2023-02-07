@@ -20,16 +20,10 @@ const Hireme = () => {
             data-aos="fade-right"
             className="max-w-sm md:block hidden"
           />
-          <img
-            src={Hireme.image2}
-            data-aos="fade-up"
-            alt="..."
-            className="max-w-sm md:hidden"
-          />
           <div
             data-aos="fade-left"
             className="border-2 border-dark_primary max-w-sm
-           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
+           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] mb-5"
           >
             <p className="leading-7">{Hireme.para}</p>            
           </div>
