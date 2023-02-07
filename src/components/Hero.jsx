@@ -7,7 +7,7 @@ const Hero = (props) => {
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
+      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end md:justify-center sm:items-center">
         <div
           data-aos="slide-left"
           data-aos-delay="1200"

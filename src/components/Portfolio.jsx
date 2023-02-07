@@ -27,7 +27,7 @@ const Portfolio = () => {
 
   const topRef = useRef();
   const goToContactButtonRef = useRef();
-  
+
   window.onload = function(){
     goToContactButtonRef.current.addEventListener("click", goToContact);
   };
