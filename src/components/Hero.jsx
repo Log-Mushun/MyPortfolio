@@ -59,7 +59,6 @@ const Hero = (props) => {
           <div className="hidden md:block md:h-[37rem] h-96 ">
             <img
               src={hero.image}
-              onLoad={handleImageLoad}
               data-aos="slide-up"
               alt="..."
               className="h-full object-cover"
@@ -72,7 +71,6 @@ const Hero = (props) => {
           <img
             src={hero.image}
             onLoad={handleImageLoad}
-            data-aos="slide-up"
             alt="..."
             className="opacity-0"
           />
