@@ -3,7 +3,7 @@ import ReactLoading from "react-loading";
 
 const Preloader = () => {
   return (
-    <div className="min-h-screen relative flex md:justify-center sm:items-center">
+    <div>
       <ReactLoading
         type={"bubbles"}
         color={"#bed2f4"}
