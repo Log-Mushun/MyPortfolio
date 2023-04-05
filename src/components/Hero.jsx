@@ -70,9 +70,9 @@ const Hero = (props) => {
           <Preloader />
           <img
             src={hero.image}
+            className="opacity-0 h-1 w-1"
             onLoad={handleImageLoad}
             alt="..."
-            className="opacity-0"
           />
         </>
       )}

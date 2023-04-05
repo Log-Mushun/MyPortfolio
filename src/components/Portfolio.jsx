@@ -28,40 +28,39 @@ const Portfolio = () => {
   const topRef = useRef();
   const goToContactButtonRef = useRef();
 
-  window.onload = function(){
+  window.onload = function () {
     goToContactButtonRef.current.addEventListener("click", goToContact);
   };
 
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
-};
+  };
 
-function scrollFunction() {
+  function scrollFunction() {
     if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
     ) {
-        topRef.current.style.display = "block";
-        topRef.current.addEventListener("click", backToTop);
+      topRef.current.style.display = "block";
+      topRef.current.addEventListener("click", backToTop);
     } else {
-        topRef.current.style.display = "none";
+      topRef.current.style.display = "none";
     }
-};
+  }
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-function goToContact(){  
-  window.location='#contact'
-}
-
+  function goToContact() {
+    window.location = "#contact";
+  }
 
   return (
     <div className="">
       <Navbar />
-      <Hero goToContactButtonRef = {goToContactButtonRef}/>
+      <Hero goToContactButtonRef={goToContactButtonRef} />
       <Skills />
       <Service />
       <Projects />
@@ -69,8 +68,8 @@ function goToContact(){
       <Testimonials />
       <Hireme />
       <Contact />
-      <Backtotopbutton topRef = {topRef} /> 
-    </div>    
+      <Backtotopbutton topRef={topRef} />
+    </div>
   );
 };
 export default Portfolio;
