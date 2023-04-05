@@ -1,9 +1,15 @@
 // import content
 import { content } from "../Content";
+import { useState } from "react";
 
 const Hero = (props) => {
   //create hero content
   const { hero } = content;
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
 
   return (
     <section id="home" className="overflow-hidden">
@@ -24,7 +30,12 @@ const Hero = (props) => {
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end">
-            <button className="btn bottom-100 hover:bg-[#253D57] hover:text-white" ref = {props.goToContactButtonRef}>{hero.btnText}</button>
+            <button
+              className="btn bottom-100 hover:bg-[#253D57] hover:text-white"
+              ref={props.goToContactButtonRef}
+            >
+              {hero.btnText}
+            </button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
@@ -46,6 +57,7 @@ const Hero = (props) => {
         <div className="hidden md:block md:h-[37rem] h-96 ">
           <img
             src={hero.image}
+            onLoad={handleImageLoad}
             data-aos="slide-up"
             alt="..."
             className="h-full object-cover"
