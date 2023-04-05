@@ -11,22 +11,30 @@ import Backtotopbutton from "./Backtotopbutton";
 import DesignerProjects from "./DesignerProjects";
 
 import { useRef } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  const topRef = useRef();
+  const goToContactButtonRef = useRef();
+  const heroRef = useRef(null);
+  const navRef = useRef();
+
   useEffect(() => {
     Aos.init({
       duration: 1800,
       offset: 100,
       disable: "mobile",
     });
+    const myHero = heroRef.current;
+    if (myHero != null) {
+      if (myHero.id == "home") navRef.current.style.display = "flex";
+    } else {
+      navRef.current.style.display = "hidden";
+    }
   }, []);
-
-  const topRef = useRef();
-  const goToContactButtonRef = useRef();
 
   window.onload = function () {
     goToContactButtonRef.current.addEventListener("click", goToContact);
@@ -43,6 +51,7 @@ const Portfolio = () => {
     ) {
       topRef.current.style.display = "block";
       topRef.current.addEventListener("click", backToTop);
+      navRef.current.style.display = "flex";
     } else {
       topRef.current.style.display = "none";
     }
@@ -59,8 +68,8 @@ const Portfolio = () => {
 
   return (
     <div className="">
-      <Navbar />
-      <Hero goToContactButtonRef={goToContactButtonRef} />
+      <Navbar navRef={navRef} />
+      <Hero heroRef={heroRef} goToContactButtonRef={goToContactButtonRef} />
       <Skills />
       <Service />
       <Projects />
