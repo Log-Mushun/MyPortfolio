@@ -16,6 +16,7 @@ const Hero = (props) => {
     <section id="home" className="overflow-hidden">
       {isLoaded ? (
         <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end md:justify-center sm:items-center">
+          {(document.body.style.overflow = "auto")}
           <div
             data-aos="slide-left"
             data-aos-delay="1200"
