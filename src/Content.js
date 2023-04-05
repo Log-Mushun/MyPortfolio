@@ -3,10 +3,10 @@ import Hero_person from "./assets/images/Hero/person.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import ai from "./assets/images/Skills/ai.png";
-import ps from "./assets/images/Skills/ps.png";
+import expressjs from "./assets/images/Skills/expressjs.png";
 import reactjs from "./assets/images/Skills/react.png";
-import dotnet from "./assets/images/Skills/dotnet.png";
-import sql from "./assets/images/Skills/SQLserver.png";
+import node from "./assets/images/Skills/node.png";
+import mongodb from "./assets/images/Skills/mongodb.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -62,10 +62,7 @@ export const content = {
         LastName: "CADAVID",
         btnText: "Hire Me",
         image: Hero_person,
-        hero_content: [{
-                count: "2",
-                text: "Years of Experience in Design",
-            },
+        hero_content: [
             {
                 count: "10+",
                 text: "Projects I Worked throughout my career",
@@ -85,27 +82,26 @@ export const content = {
                 logo: figma,
             },
             {
-                name: ".NET core",
-                para: "Backend technology",
+                name: "Node.js",
+                para: "Back end environment",
                 list: {
-                    1: "1. I am proficient in designing and integrating APIs using the ASP.NET Core framework.",
-                    2: "2. With my knowledge in ASP.NET Core, I am able to incorporate real-time technologies such as WebSockets to enhance the functionality of applications",
+                    1: "1. I am proficient in designing and integrating APIs using the Express framework.",
+                    2: "2. With my knowledge in Node.js, I am able to incorporate Restful APIs",
                 },
-                logo: dotnet,
+                logo: node,
             },
             {
-                name: "Adobe Photoshop",
-                para: "Image edition",
+                name: "Express.js",
+                para: "Back end framework",
                 list: {
-                    1: "1. I am skilled in enhancing images through adjustments to lighting, color, and other key elements.",
-                    2: "2. My capabilities extend to removing or altering the background of photos to achieve desired effects.",
-                    3: "3. I can produce realistic product mockups to showcase designs in a tangible way.",
-                    4: "4. I have a strong artistic background and can create visually appealing drawings and digital designs.",
+                    1: "1. I am capable of handling HTTP requests and responses, as well as other essential features like middleware, routing, and templating in Express.js.",
+                    2: "2. I can create middleware functions in Express.js that can modify the request or response before they are processed by the application.",
+                    3: "3. I am proficient in building server-side applications using Express.js."
                 },
-                logo: ps,
+                logo: expressjs,
             },
             {
-                name: "React Native",
+                name: "React.js",
                 para: "Web applications",
                 list: {
                     1: "1. I have experience in building dynamic single-page web applications with visually stunning user interfaces using React.",
@@ -126,13 +122,14 @@ export const content = {
                 logo: ai,
             },
             {
-                name: "SQL server",
+                name: "Mongo DB",
                 para: "Data base management",
                 list: {
-                    1: "1. Storing information in relational databases",
-                    2: "2. Administration of request and response interactions with the servers that host the databases.",
+                    1: "1. Designing and implementing MongoDB data models.",
+                    2: "2. Writing efficient queries using the MongoDB query language.",
+                    3: "3. Troubleshooting common MongoDB performance and scalability issues."
                 },
-                logo: sql,
+                logo: mongodb,
             },
         ],
         icon: MdArrowForward,
