@@ -9,7 +9,7 @@ const Hero = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleImageLoad = () => {
-    setIsLoaded(false);
+    setIsLoaded(true);
   };
 
   return (
