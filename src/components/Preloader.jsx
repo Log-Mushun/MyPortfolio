@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Preloader = () => {
   return (
-    <div className="min-h-screen relative flex md:justify-center sm:items-center">
+    <div className="min-h-screen flex justify-center items-center">
       <motion.div
         initial={{ scale: 1 }}
         animate={{ scale: [1, 1.5, 1] }}

@@ -12,7 +12,7 @@ const Hero = (props) => {
     setIsLoaded(true);
   };
 
-  if (isLoaded) {
+  if (isLoaded || screen.height < 900) {
     document.body.style.overflow = "auto";
   } else {
     document.body.style.overflow = "hidden";
@@ -20,7 +20,7 @@ const Hero = (props) => {
 
   return (
     <>
-      {isLoaded ? (
+      {isLoaded || screen.height < 900 ? (
         <section ref={props.heroRef} id="home" className="overflow-hidden">
           <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end md:justify-center sm:items-center">
             <div
@@ -77,7 +77,7 @@ const Hero = (props) => {
             </div>
           </div>
         </section>
-      ) : (
+      ) : screen.height > 900 ? (
         <>
           <Preloader />
           <img
@@ -87,6 +87,8 @@ const Hero = (props) => {
             alt="..."
           />
         </>
+      ) : (
+        <></>
       )}
     </>
   );
