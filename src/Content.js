@@ -2,11 +2,11 @@
 import Hero_person from "./assets/images/Hero/person.png";
 
 import figma from "./assets/images/Skills/figma.png";
+import unity from "./assets/images/Skills/unity.png";
+import git from "./assets/images/Skills/git.png"
 import ai from "./assets/images/Skills/ai.png";
-import expressjs from "./assets/images/Skills/expressjs.png";
-import reactjs from "./assets/images/Skills/react.png";
-import node from "./assets/images/Skills/node.png";
-import mongodb from "./assets/images/Skills/mongodb.png";
+import blender from "./assets/images/Skills/blender.png";
+import maya from "./assets/images/Skills/maya.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -57,7 +57,7 @@ export const content = {
         },
     ],
     hero: {
-        title: "Web Developer & Designer",
+        title: "Game Developer and Designer",
         firstName: "MICHELLE",
         LastName: "CADAVID",
         btnText: "Hire Me",
@@ -72,47 +72,59 @@ export const content = {
     skills: {
         title: "Skills",
         subtitle: "MY TOP SKILLS",
-        skills_content: [{
+        skills_content: [
+            {
+                name: "Unity Engine",
+                para: "Bring to reality our games",
+                list: {
+                    1: "1. I am able to integrate APIs in C# Unity Scripts, making different requests.",
+                    2: "2. I am able to create unity projects and incorporate 2D and 3D assets and apply animations",
+                    3: "3. With my knowledge in C#, I am able integrate game mechanics and new features into existing apps",
+                },
+                logo: unity,
+            },
+            {
                 name: "Figma",
                 para: "UI/UX & Web design",
                 list: {
-                    1: "As a web developer, I have the expertise to create functional prototypes that prioritize a seamless and enjoyable user experience.",
+                    1: "As a game developer, I have the expertise to create functional prototypes that prioritize a seamless and enjoyable user experience.",
                     2: "2. I believe that Figma is a valuable tool in the web design process, offering a speedy solution for crafting visually appealing designs.",
                 },
                 logo: figma,
             },
             {
-                name: "Node.js",
-                para: "Back end environment",
+                name: "Git",
+                para: "Version control",
                 list: {
-                    1: "1. I am proficient in designing and integrating APIs using the Express framework.",
-                    2: "2. With my knowledge in Node.js, I am able to incorporate Restful APIs",
+                    1: "1. Initializing Git repositories: this allows me to start tracking changes and implementing version control from the beginning of a project.",
+                    2: "2. Committing and pushing changes: This ensures that my code changes are securely saved and accessible to other team members.",
+                    3: "3. I possess a strong understanding of creating branches, switching between them, and merging changes from one branch to another. "
                 },
-                logo: node,
+                logo: git,
             },
             {
-                name: "Express.js",
-                para: "Back end framework",
+                name: "Blender",
+                para: "for 3D Assets and animations",
                 list: {
-                    1: "1. I am capable of handling HTTP requests and responses, as well as other essential features like middleware, routing, and templating in Express.js.",
-                    2: "2. I can create middleware functions in Express.js that can modify the request or response before they are processed by the application.",
-                    3: "3. I am proficient in building server-side applications using Express.js."
+                    1: "1. Texturing:  I have the ability to change textures, improve their quality, and apply them to models, enhancing the visual appeal of the game.",
+                    2: "2. Blender allows me to animate characters and objects for games. I can create keyframe animations or define meaningful character poses to create game art.",
+                    3: "3. Exporting Assets: I am skilled in exporting animations and 3D assets from Blender to game engines or other software platforms commonly used in game development.",
                 },
-                logo: expressjs,
+                logo: blender,
             },
             {
-                name: "React.js",
-                para: "Web applications",
+                name: "Maya",
+                para: "for 3D assets and animations",
                 list: {
-                    1: "1. I have experience in building dynamic single-page web applications with visually stunning user interfaces using React.",
-                    2: "2. I am proficient in crafting single-page websites using React, delivering a seamless user experience.",
-                    3: "3. I can integrate external plugins and tools into React projects to improve productivity and streamline development processes.",
+                    1: "1. I can define skeletal structures (rigging), and animate the models accordingly.",
+                    2: "2. I can Edit Motion Capture animations and other existing animations, making use of animation layers.",
+                    3: "3. Exporting Assets: I am skilled in exporting animations and 3D assets from Maya to game engines or other software platforms commonly used in game development."
                 },
-                logo: reactjs,
+                logo: maya,
             },
             {
                 name: "Illustrator",
-                para: "Logo design and vector illustrations",
+                para: "Character design and vector illustrations",
                 list: {
                     1: "1. I am skilled in designing custom icons and graphic elements",
                     2: "2. My expertise in Illustrator includes logo creation, ensuring the visual representation of a brand is both unique and impactful.",
@@ -120,17 +132,7 @@ export const content = {
                     4: "4. I can generate repeating patterns in Illustrator, adding texture and depth to designs.",
                 },
                 logo: ai,
-            },
-            {
-                name: "Mongo DB",
-                para: "Data base management",
-                list: {
-                    1: "1. Designing and implementing MongoDB data models.",
-                    2: "2. Writing efficient queries using the MongoDB query language.",
-                    3: "3. Troubleshooting common MongoDB performance and scalability issues."
-                },
-                logo: mongodb,
-            },
+            }
         ],
         icon: MdArrowForward,
     },
@@ -138,8 +140,8 @@ export const content = {
         title: "Services",
         subtitle: "WHAT I OFFER",
         service_content: [{
-                title: "Web Development",
-                para: "Combining technical proficiency with an eye for design, as full-stack developer, I can go from creating custom websites from the ground up to developing sophisticated web applications.",
+                title: "Game Development",
+                para: "Combining technical proficiency with an eye for design, as a Game Developer, I can provide inmersive interactive experiences and fun games",
                 logo: services_logo1,
             },
             {
@@ -155,28 +157,13 @@ export const content = {
         ],
     },
     Projects: {
-        title: "Web development Projects",
-        subtitle: "MY CREATION",
+        title: "Noten und Farben",
+        subtitle: "German vocabulary for children",
         image: person_project,
         project_content: [{
                 title: "CodeSense",
                 image: project1,
                 link: "https://codesense.netlify.app"
-            },
-            {
-                title: "Greenhub",
-                image: project2,
-                link: "https://204-michelle.github.io/Greenhub/"
-            },
-            {
-                title: "InnoVate",
-                image: project3,
-                link: "https://innovate-interior.webflow.io"
-            },
-            {
-                title: "PlaySafeNow",
-                image: project4,
-                link: "https://paysafenow.webflow.io"
             }
         ],
     },

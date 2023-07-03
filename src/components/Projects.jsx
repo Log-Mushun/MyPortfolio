@@ -1,6 +1,6 @@
 import { content } from "../Content";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import ReactPlayer from "react-player";
 
 // Import Swiper styles
 import "swiper/css";
@@ -29,31 +29,9 @@ const Projects = () => {
             data-aos="fade-right"
             className="hidden md:block max-w-[45vw] min-w-[22rem]"
           />
-          <Swiper
-            pagination={{
-              clickable: true,
-            }}
-            data-aos="fade-left"
-            data-aos-duration="15"
-            spaceBetween={20}
-            modules={[Pagination]}
-            className="rounded-3xl pb-16 flex max-w-xs md:max-w-lg drop-shadow-primary self-start"
-          >
-            {Projects.project_content.map((content, i) => (
-              <SwiperSlide
-                key={i}
-                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
-              >
-                <img src={content.image} alt="..." />
-                <div className="flex flex-col gap-1 mt-2">
-                  <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
-                    <a href={content.link} target="_blank">VISIT PREVIEW SITE</a>
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div>
+          <ReactPlayer url='https://youtu.be/TYc_mwqUp3w'/>
+          </div>
         </div>
       </div>
     </section>
