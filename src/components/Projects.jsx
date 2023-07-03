@@ -22,15 +22,17 @@ const Projects = () => {
           </h4>
           <br />
         </div>
-        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
-          <img
-            src={Projects.image}
-            alt="..."
-            data-aos="fade-right"
-            className="hidden md:block max-w-[45vw] min-w-[22rem]"
-          />
-          <div>
-          <ReactPlayer url='https://youtu.be/TYc_mwqUp3w'/>
+        <div className="flex items-center lg:flex-row gap-5">
+          <div className="block w-[70%]">
+          <ReactPlayer url='https://youtu.be/TYc_mwqUp3w' width='50rem' height='30rem'/>
+          </div>
+          <div className="flex flex-row">
+            <img
+              src={Projects.image}
+              alt="..."
+              data-aos="fade-right"
+              className="md:flex sm:hidden"
+            />
           </div>
         </div>
       </div>

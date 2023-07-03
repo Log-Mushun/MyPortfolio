@@ -58,11 +58,16 @@ export const content = {
     ],
     hero: {
         title: "Game Developer and Designer",
+        subtitle: "Unity",
         firstName: "MICHELLE",
         LastName: "CADAVID",
         btnText: "Hire Me",
         image: Hero_person,
         hero_content: [
+            {
+                count: "3",
+                text: "Platforms: Android, IOS, Web",
+            },
             {
                 count: "10+",
                 text: "Projects I Worked throughout my career",
