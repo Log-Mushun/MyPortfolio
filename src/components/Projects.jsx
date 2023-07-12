@@ -26,7 +26,10 @@ const Projects = () => {
           <div className="block w-[70%]">
           <ReactPlayer url='https://youtu.be/TYc_mwqUp3w' width='50rem' height='30rem'/>
           </div>
-          <div className="flex flex-row">
+          <div className="relative">
+          <button className="absolute rounded-full bg-blue-500 text-white top-0 right-0 m-4 p-2 h-20 w-40">
+              MORE
+            </button>
             <img
               src={Projects.image}
               alt="..."
