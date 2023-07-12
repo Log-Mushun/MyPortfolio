@@ -7,6 +7,10 @@ import git from "./assets/images/Skills/git.png"
 import ai from "./assets/images/Skills/ai.png";
 import blender from "./assets/images/Skills/blender.png";
 import maya from "./assets/images/Skills/maya.png";
+import reactjs from "./assets/images/Skills/react.png";
+import node from "./assets/images/Skills/node.png";
+import mongodb from "./assets/images/Skills/mongodb.png";
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
