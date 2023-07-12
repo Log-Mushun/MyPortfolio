@@ -141,7 +141,30 @@ export const content = {
                     4: "4. I can generate repeating patterns in Illustrator, adding texture and depth to designs.",
                 },
                 logo: ai,
-            }
+            },
+              {
+                name: "React.js",
+                para: "Web applications",
+                list: {
+                    1: "1. I have experience in building dynamic single-page web applications with visually stunning user interfaces using React.",
+                    2: "2. I am proficient in crafting single-page websites using React, delivering a seamless user experience.",
+                    3: "3. I can integrate external plugins and tools into React projects to improve productivity and streamline development processes.",
+                },
+                logo: reactjs,
+            },
+            {
+
+            },
+            {
+                name: "Mongo DB",
+                para: "Data base management",
+                list: {
+                    1: "1. Designing and implementing MongoDB data models.",
+                    2: "2. Writing efficient queries using the MongoDB query language.",
+                    3: "3. Troubleshooting common MongoDB performance and scalability issues."
+                },
+                logo: mongodb,
+            },
         ],
         icon: MdArrowForward,
     },
