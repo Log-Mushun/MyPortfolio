@@ -153,7 +153,13 @@ export const content = {
                 logo: reactjs,
             },
             {
-
+                name: "Node.js",
+                para: "Development environment",
+                list: {
+                    1: "1. I am proficient in designing and integrating APIs using the Express framework.",
+                    2: "2. With my knowledge in Node.js, I am able to incorporate Restful APIs in web applications",
+                },
+                logo: node,
             },
             {
                 name: "Mongo DB",

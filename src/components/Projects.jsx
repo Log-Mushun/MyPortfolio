@@ -6,10 +6,9 @@ import ReactPlayer from "react-player";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper";
-
 const Projects = () => {
   const { Projects } = content;
+
   return (
     <section className="bg-bg_light_primary" id="projects">
       <div className="md:container px-5 pt-14 min-h-90vh flex flex-col justify-between">
@@ -27,14 +26,17 @@ const Projects = () => {
           <ReactPlayer url='https://youtu.be/TYc_mwqUp3w' width='50rem' height='30rem'/>
           </div>
           <div className="relative">
-          <button className="absolute rounded-full bg-blue-500 text-white top-0 right-0 m-4 p-2 h-20 w-40">
+            <div className="absolute top-0 left-0 z-10">
+             <button className="rounded-full bg-blue-500 text-white m-4 p-2 h-20 w-40"   onClick={() => window.open('https://www.behance.net/gallery/175196503/Noten-Und-Farben', '_blank')}
+              data-aos="fade-up">
               MORE
             </button>
+            </div>
             <img
               src={Projects.image}
               alt="..."
               data-aos="fade-right"
-              className="md:flex sm:hidden"
+              className="md:flex sm:hidden z-20"
             />
           </div>
         </div>
